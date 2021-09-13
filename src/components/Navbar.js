@@ -38,14 +38,12 @@ function Navbar() {
         ))}
         {nightMode ? (
           <FaMoon
-            className="navItem"
-            style={{ color: 'orange' }}
+            className="navItem nightMode-toggle"
             onClick={() => setnightMode(!nightMode)}
           />
         ) : (
           <FaSun
-            className="navItem"
-            style={{ color: 'orange' }}
+            className="navItem nightMode-toggle"
             onClick={() => setnightMode(!nightMode)}
           />
         )}

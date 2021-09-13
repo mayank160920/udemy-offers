@@ -122,6 +122,11 @@ a {
   color: var(--navItemActiveColor);
 }
 
+.nightMode-toggle {
+  color: orange;
+  cursor: pointer;
+}
+
 /* search box */
 
 #searchBox {
