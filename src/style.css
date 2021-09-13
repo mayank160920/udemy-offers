@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+
+:root {
+  --textPrimaryFont: 'Arvo', serif;
+}
+
+body {
+  background-color: var(--bgColor);
+}
+
 h1,
 p,
 a {
-  color: black;
-  font-family: 'Arvo', serif;
+  color: var(--textPrimaryColor);
+  font-family: var(--textPrimaryFont);
   text-decoration: none;
 }
 
 .offerCard {
+  background-color: var(--offerCardBgColor);
   margin: 5px;
   max-width: 300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -32,12 +42,12 @@ a {
 
 .offerCard-title {
   font-weight: bold;
-  font-family: 'Arvo', serif;
+  font-family: var(--textPrimaryFont);
 }
 .offerCard-description {
   color: rgb(117, 117, 117);
   font-size: 13px;
-  font-family: 'Arvo', serif;
+  font-family: var(--textPrimaryFont);
 }
 
 .offerCards-container {
@@ -79,6 +89,11 @@ a {
   display: none;
 }
 
+#root > div:nth-child(2) > div.offerCards-container > svg {
+  /* spinner slector */
+  color: var(--spinnerColor);
+}
+
 .navBar {
   width: 95%;
   display: flex;
@@ -99,12 +114,12 @@ a {
 
 .navItem {
   font-size: min(6vw, 25px);
-  color: grey;
+  color: var(--navItemColor);
   margin: 0px 5px;
 }
 
 .navItem-active {
-  color: black;
+  color: var(--navItemActiveColor);
 }
 
 /* search box */
@@ -113,13 +128,13 @@ a {
   border-width: 0px 0px 1px;
   border-radius: 0.2rem;
   display: flex;
-  font-family: 'Arvo', serif;
+  font-family: var(--textPrimaryFont);
   font-size: 1.5rem;
   margin: auto;
   margin-bottom: 20px;
   padding-left: 10px;
+  text-align: center;
   width: 90%;
-  /* width: clamp(300px, 80%, 600px); */
 }
 
 #searchBox:focus,
