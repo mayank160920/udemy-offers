@@ -19,8 +19,8 @@ export default function App() {
   const fetchOffers = async () => {
     try {
       let response = await fetch(
-        // 'https://cors-bypass.jmethew76.workers.dev/https://sumanjay.vercel.app/udemy'
-        'https://cors-bypass.jmethew76.workers.dev/https://jsonkeeper.com/b/XDNS'
+        'https://cors-bypass.jmethew76.workers.dev/https://sumanjay.vercel.app/udemy'
+        // 'https://cors-bypass.jmethew76.workers.dev/https://jsonkeeper.com/b/XDNS'
       );
       let data = await response.json();
       setOffers(data);
