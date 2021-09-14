@@ -10,7 +10,9 @@ function Navbar() {
   ];
 
   const [title, settitle] = useState('Udemy Offers');
-  const [nightMode, setnightMode] = useState(false);
+  const [nightMode, setnightMode] = useState(
+    localStorage.getItem('nightMode') ? true : false
+  );
 
   useEffect(() => {
     for (const [key, value] of Object.entries(
@@ -18,6 +20,9 @@ function Navbar() {
     )) {
       document.querySelector(':root').style.setProperty(key, value);
     }
+    nightMode
+      ? localStorage.setItem('nightMode', 'true')
+      : localStorage.removeItem('nightMode');
   }, [nightMode]);
 
   return (

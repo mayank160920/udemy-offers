@@ -16,6 +16,8 @@ a {
   text-decoration: none;
 }
 
+/* offerCard */
+
 .offerCard {
   background-color: var(--offerCardBgColor);
   margin: 5px;
@@ -26,6 +28,7 @@ a {
 }
 
 .offerCard:hover {
+  transform: scale(1.02);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
@@ -94,6 +97,8 @@ a {
   color: var(--spinnerColor);
 }
 
+/* navBar */
+
 .navBar {
   width: 95%;
   display: flex;
@@ -137,7 +142,7 @@ a {
   font-size: 1.5rem;
   margin: auto;
   margin-bottom: 20px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   text-align: center;
   width: 90%;
 }
