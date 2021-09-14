@@ -1,8 +1,9 @@
 export const lightTheme = {
   '--bgColor': 'white',
   '--textPrimaryColor': 'black',
+  '--navBgColor': 'rebeccapurple',
   '--navItemColor': 'gray',
-  '--navItemActiveColor': 'black',
+  '--navItemActiveColor': 'white',
   '--offerCardBgColor': 'white',
   '--spinnerColor': 'black'
 };
@@ -10,6 +11,7 @@ export const lightTheme = {
 export const darkTheme = {
   '--bgColor': 'black',
   '--textPrimaryColor': 'white',
+  '--navBgColor': 'rebeccapurple',
   '--navItemColor': 'gray',
   '--navItemActiveColor': 'white',
   '--offerCardBgColor': '#333',

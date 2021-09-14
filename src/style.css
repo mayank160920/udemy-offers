@@ -5,6 +5,8 @@
 }
 
 body {
+  margin: 0px;
+  padding: 0px;
   background-color: var(--bgColor);
 }
 
@@ -60,6 +62,7 @@ a {
   align-content: center;
   justify-content: center;
   align-items: stretch;
+  margin: 20px;
 }
 
 .skeleton {
@@ -100,12 +103,18 @@ a {
 /* navBar */
 
 .navBar {
-  width: 95%;
+  width: 100%;
   display: flex;
   align-content: center;
   justify-content: flex-end;
   align-items: center;
-  margin: 30px 0px;
+  margin: 0px 0px;
+  background-color: var(--navBgColor);
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
+  padding: 10px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .navBar-title {
@@ -141,8 +150,6 @@ a {
   font-family: var(--textPrimaryFont);
   font-size: 1.5rem;
   margin: auto;
-  margin-bottom: 20px;
-  /* padding-left: 10px; */
   text-align: center;
   width: 90%;
 }
